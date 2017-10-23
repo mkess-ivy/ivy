@@ -1,3 +1,9 @@
+.gamma_menu ul li a, .delta_menu ul li a, .beta_menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #070707; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -46,13 +52,119 @@ img {
 /**
  * Clearfix
  */
+.beta_head {
+  *zoom: 1; }
+  .beta_head:before, .beta_head:after {
+    content: " ";
+    display: table; }
+  .beta_head:after {
+    clear: both; }
+
+.gamma_menu ul li a, .delta_menu ul li a, .beta_menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #070707; }
+
+.gamma_menu {
+  float: left; }
+
+.gamma_menu ul li {
+  font-size: 12px; }
+
+.delta_menu {
+  float: right; }
+
+.delta_menu ul li {
+  font-size: 12px; }
+
+.logo {
+  width: 100px;
+  float: left; }
+
 .logo_img {
-  width: 100px; }
+  width: 65px; }
 
 .logo_txt {
-  font-size: 24px;
-  line-height: 22px;
-  letter-spacing: 5px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 6px;
   text-transform: uppercase;
-  width: 65px;
-  word-break: break-all; }
+  width: 60px;
+  word-break: break-all;
+  padding-top: 10px; }
+
+.beta_menu {
+  float: right; }
+
+.beta_menu ul li {
+  font-size: 12px; }
+
+.beta_head {
+  position: relative; }
+
+.wrapper {
+  margin: 10px; }
+
+.nav {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+.nav .button-dropdown {
+  position: relative;
+  transition: 1s; }
+
+.nav li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.nav li a span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  color: #999;
+  vertical-align: middle;
+  margin-top: -7px; }
+
+.nav li a:hover, .nav li a.dropdown-toggle.active {
+  color: #658873; }
+
+.nav li a:hover span, .nav li a.dropdown-toggle.active span {
+  color: #fff; }
+
+.nav li .dropdown-menu {
+  display: none;
+  margin-top: 3px;
+  text-align: center; }
+
+.nav li .dropdown-menu.active {
+  display: block; }
+
+.dropdown-menu li a {
+  font-size: 16px;
+  width: 100%;
+  padding: 3px 0; }
+
+.small_menu a {
+  font-size: 20px !important; }
+
+.isHidden {
+  display: none; }
+
+.alpha_menu {
+  height: calc(100vh - 210px);
+  overflow: scroll;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+
+.primary_slider {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .primary_slider {
+      display: block; } }

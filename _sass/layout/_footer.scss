@@ -1,0 +1,18 @@
+.gamma_menu {
+	float: left;
+}
+.gamma_menu ul li {
+	font-size: 12px;
+}
+.gamma_menu ul li a {
+	@extend %menu_links;
+}
+.delta_menu {
+	float: right;
+}
+.delta_menu ul li {
+	font-size: 12px;
+}
+.delta_menu ul li a {
+	@extend %menu_links;
+}

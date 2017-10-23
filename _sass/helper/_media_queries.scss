@@ -1,0 +1,19 @@
+$on-tablet              : 768px;
+$on-laptop				: 992px;
+$on-desktop				: 1200px;
+
+@mixin tablet {
+  @media screen and (min-width: #{$on-tablet}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: #{$on-laptop}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: #{$on-desktop}) {
+    @content;
+  }
+}

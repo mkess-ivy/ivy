@@ -1,0 +1,16 @@
+.isHidden {
+	display: none;
+}
+.alpha_menu {
+	height: calc(100vh - 210px);
+	overflow: scroll;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.primary_slider {
+	display: none;
+	@include tablet {
+		display: block;
+	}
+}
