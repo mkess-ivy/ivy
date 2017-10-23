@@ -1,13 +1,58 @@
-@charset "utf-8";
+*, *:before, *:after {
+  box-sizing: border-box; }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
 
-@import
-	"base",
-	"helper/media_queries",
-	"helper/mixins",
-	"helper/variables",
-	"layout/footer",
-	"layout/header",
-	"layout/navigation"
-;
+/**
+ * Basic styling
+ */
+body {
+  font-family: "Work Sans", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #070707;
+  background-color: #d5d5d5;
+  -webkit-text-size-adjust: 100%; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 15px; }
+
+ul, li {
+  list-style: none; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Links
+ */
+/**
+ * Clearfix
+ */
+.logo_img {
+  width: 100px; }
+
+.logo_txt {
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: 65px;
+  word-break: break-all; }
