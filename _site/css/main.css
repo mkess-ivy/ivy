@@ -129,7 +129,11 @@ img {
     margin: 55px auto 0; } }
 @media screen and (min-width: 992px) {
   .inner_wrapper {
-    width: 800px; } }
+    width: 800px;
+    position: relative; } }
+@media screen and (min-width: 1200px) {
+  .inner_wrapper {
+    width: 1100px; } }
 
 .flex_menu {
   display: flex;
@@ -158,6 +162,16 @@ img {
   @media screen and (min-width: 992px) {
     .primary_slider {
       display: none !important; } }
+
+.hover_wrapper {
+  display: none !important; }
+  @media screen and (min-width: 992px) {
+    .hover_wrapper {
+      display: block !important;
+      width: 65%;
+      position: absolute;
+      top: 75px;
+      right: -40px; } }
 
 .nav {
   display: block;
@@ -199,9 +213,6 @@ img {
 .nav li a:hover, .nav li a.dropdown-toggle.active {
   color: #658873; }
 
-.nav li a:hover span, .nav li a.dropdown-toggle.active span {
-  color: #fff; }
-
 .nav li .dropdown-menu {
   display: none;
   margin-top: 3px;
@@ -224,6 +235,57 @@ img {
       font-size: 18px;
       line-height: 24px; } }
 
-.small_menu a {
-  font-size: 20px !important;
-  line-height: 26px !important; }
+.fixed_img {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .fixed_img {
+      display: block;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 560px;
+      height: 400px;
+      position: fixed;
+      right: 30px;
+      top: 125px; } }
+  @media screen and (min-width: 1200px) {
+    .fixed_img {
+      width: 660px;
+      height: 425px;
+      right: 100px; } }
+
+.js-background-receiver.hover {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .js-background-receiver.hover {
+      z-index: 300;
+      position: fixed;
+      display: block;
+      height: 400px;
+      width: 560px;
+      right: 30px;
+      top: 125px;
+      background-color: blue;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; } }
+  @media screen and (min-width: 1200px) {
+    .js-background-receiver.hover {
+      right: 100px;
+      width: 660px;
+      height: 425px; } }
+
+.js-background-trigger a {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .js-background-trigger a {
+      display: block;
+      z-index: 700;
+      position: relative; } }
+
+.js-background-trigger {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .js-background-trigger {
+      display: block;
+      position: relative; } }

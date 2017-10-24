@@ -59,59 +59,65 @@
 </header>
 
         <div class="wrapper inner_wrapper">
-<div class="primary_slider">
-	<div class="slide slide_img"><img src="/assets/slide1.jpg" /></div>
-	<div class="slide slide_img"><img src="/assets/slide2.jpg" /></div>
-	<div class="slide slide_img"><img src="/assets/slide3.jpg" /></div>
-	<div class="slide slide_img"><img src="/assets/slide4.jpg" /></div>
-	<div class="slide slide_img"><img src="/assets/slide5.jpg" /></div>
-	<div class="slide slide_img"><img src="/assets/slide6.jpg" /></div>
-	<div class="slide slide_img"><img src="/assets/slide7.jpg" /></div>
-</div>
-<div class="alpha_menu">
-	
-	<ul class="nav">
-		<div class="flex_menu">
-		<li><a href="">home</a></li>
-		<li class="button-dropdown"><a href="javascript:void(0)" class="dropdown-toggle">web<span><img src="/assets/caret.png" width="15" /></span></a>
-			<ul class="dropdown-menu">
-				
-				<li><a href="">ingram family foundation</a></li>
-				<li><a href="">noisy tenants</a></li>
-				<li><a href="">svncrwns</a></li>
-				<li><a href="">nicole duncan</a></li>
-				<li><a href="">adams + associates</a></li>
-				<li><a href="">taylor's barbershop</a></li>
-				<li><a href="">neptune</a></li>
-				
-			</ul>
-		</li>
-		<li class="button-dropdown"><a href="javascript:void(0)" class="dropdown-toggle">visuals<span><img src="/assets/caret.png" width="15" /></span></a>
-			<ul class="dropdown-menu">
-				<li><a href="">the war is over</a></li>
-				<li><a href="">fam @ bma</a></li>
-				<li><a href="">the way wild</a></li>
-				<li><a href="">renegade bride</a></li>
-				<li><a href="">summer love</a></li>
-				<li><a href="">grease</a></li>
-				<li><a href="">portfolio</a></li>
-			</ul>
-		</li>
-		<li class="button-dropdown"><a href="javascript:void(0)" class="dropdown-toggle">social<span><img src="/assets/caret.png" width="15"/></span></a>
-			<ul class="dropdown-menu">
-				<li><a href="">subscribe</a></li>
-				<li><a href="">instagram</a></li>
-				<li><a href="">vimeo</a></li>
-				<li><a href="">email</a></li>
-			</ul>
-		</li>
-		<li><a href="">profile</a></li>
+	<div class="primary_slider"><!-- only on tablet -->
+		<div class="slide slide_img"><img src="/assets/slide1.jpg" /></div>
+		<div class="slide slide_img"><img src="/assets/slide2.jpg" /></div>
+		<div class="slide slide_img"><img src="/assets/slide3.jpg" /></div>
+		<div class="slide slide_img"><img src="/assets/slide4.jpg" /></div>
+		<div class="slide slide_img"><img src="/assets/slide5.jpg" /></div>
+		<div class="slide slide_img"><img src="/assets/slide6.jpg" /></div>
+		<div class="slide slide_img"><img src="/assets/slide7.jpg" /></div>
 	</div>
-	</ul>
-		
-</div>
-</div>
 
+	<div class="alpha_menu">	
+		<ul class="nav">
+			<div class="flex_menu">
+				<li><a href="">home</a></li>
+				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">web<span><img src="/assets/caret.png" width="15" /></span></a>
+					<div class="js-background-receiver" style="background-image: url(/assets/slide2.jpg);"></div>
+					<ul class="dropdown-menu">
+						<li><a href="">ingram family foundation</a></li>
+						<li><a href="">noisy tenants</a></li>
+						<li><a href="">svncrwns</a></li>
+						<li><a href="">nicole duncan</a></li>
+						<li><a href="">adams + associates</a></li>
+						<li><a href="">taylor's barbershop</a></li>
+						<li><a href="">neptune</a></li>
+					</ul>
+				</li>
+				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">visuals<span><img src="/assets/caret.png" width="15" /></span></a>
+				<div class="js-background-receiver" style="background-image: url(/assets/slide3.jpg);"></div>
+					<ul class="dropdown-menu">
+						<li><a href="">the war is over</a></li>
+						<li><a href="">fam @ bma</a></li>
+						<li><a href="">the way wild</a></li>
+						<li><a href="">renegade bride</a></li>
+						<li><a href="">summer love</a></li>
+						<li><a href="">grease</a></li>
+						<li><a href="">portfolio</a></li>
+					</ul>
+				</li>
+				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">social<span><img src="/assets/caret.png" width="15"/></span></a>
+					<div class="js-background-receiver" style="background-image: url(/assets/slide4.jpg);"></div>
+					<ul class="dropdown-menu">
+						<li><a href="">subscribe</a></li>
+						<li><a href="">instagram</a></li>
+						<li><a href="">vimeo</a></li>
+						<li><a href="">email</a></li>
+					</ul>
+				</li>
+				<li class="js-background-trigger"><a href="">profile</a>
+					<div class="js-background-receiver" style="background-image: url(/assets/slide5.jpg);"></div>
+				</li>
+			</div>
+		</ul>
+	</div>
+
+	<div class="hover_wrapper">
+		<div class="fixed_img" style="background-image: url('/assets/slide1.jpg')"></div>
+	</div>
+
+</div>
     
         <footer class="footer_position wrapper">
 	<div class="gamma_menu">
@@ -138,7 +144,7 @@
 <script type="text/javascript" src="/slick/slick.min.js"></script>
 <!-- Scripts -->
 <script type="text/javascript" src="/js/main.js"></script>
-<script type="text/javascript" src="/js/slider.js"></script>
+<script type="text/javascript" src="/js/dropdown.js"></script>
     
 
   </body>

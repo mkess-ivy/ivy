@@ -16,6 +16,16 @@
 		display: none !important;
 	}
 }
+.hover_wrapper {
+	display: none !important;
+	@include laptop {
+		display: block !important;
+		width: 65%;
+		position: absolute;
+		top: 75px;
+		right: -40px;
+	}
+}
 
 // Dropdown Menu functionality
 .nav {
@@ -24,13 +34,11 @@
 	padding: 0;
 	text-align: center;
 	height: 95vh;
-
     @include tablet {
         margin: 20px 0 50px;
         text-align: left;
 		height: auto;
     }
-
     @include laptop {
     	height: calc(100vh - 167px);
     	margin: 0;
@@ -58,13 +66,11 @@
     margin-top: -7px;
 }
 .nav li a:hover, .nav li a.dropdown-toggle.active {
-    // background-color: #289dcc ;
     color: $color3;
 }
-.nav li a:hover span, .nav li a.dropdown-toggle.active span {
-    color: #fff;
-
-}
+// .nav li a:hover span, .nav li a.dropdown-toggle.active span {
+//     color: #fff;
+// }
 .nav li .dropdown-menu {
     display: none;
     margin-top: 3px;
@@ -89,9 +95,62 @@
 		line-height: 24px;
 	}
 }
-// #Dropdown Menu
 
-.small_menu a {
-	font-size: 20px !important;
-	line-height: 26px !important;
+// Hover feature
+.fixed_img {
+	display: none;
+	@include laptop {
+		display: block;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 560px;
+		height: 400px;
+		position: fixed;
+		right: 30px;
+	    top: 125px;
+	}
+	@include desktop {
+		width: 660px;
+		height: 425px;
+		right: 100px;
+	}
+	
+}
+.js-background-receiver.hover {
+  	display: none;
+
+  	@include laptop {
+	    z-index: 300;
+	    position: fixed;
+	    display: block;
+	    height: 400px;
+	    width: 560px;
+	    right: 30px;
+	    top: 125px;
+	    background-color: blue;
+	    background-size: cover;
+	    background-position: center center;
+	    background-repeat: no-repeat;
+  	}
+  	@include desktop {
+  		right: 100px;
+  		width: 660px;
+  		height: 425px;
+  	}
+}
+.js-background-trigger a {
+	display: none;
+  	@include laptop {
+  		display: block;
+  		z-index: 700;
+  		position: relative;	
+  	}
+}
+.js-background-trigger {
+	display: none;
+	@include laptop {
+		display: block;
+		position: relative;		
+	}
 }
