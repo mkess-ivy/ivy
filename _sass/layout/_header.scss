@@ -1,6 +1,7 @@
 .logo {
-	width: 100px;
 	float: left;
+	position: fixed;
+	left: 10px;
 }
 .logo_img {
 	width: 65px;
@@ -16,9 +17,17 @@
 }
 .beta_menu {
 	float: right;
+	position: fixed;
+	right: 10px;
+	z-index: 500;
 }
 .beta_menu ul li {
 	font-size: 12px;
+
+	@include tablet {
+		display: inline-block;
+		padding-left: 20px;
+	}
 }
 .beta_menu ul li a {
 	@extend %menu_links;

@@ -1,5 +1,12 @@
+.footer_position {
+	position: relative;
+	@extend %clearfix;
+}
 .gamma_menu {
 	float: left;
+	left: 10px;
+	bottom: 0;
+	position: fixed;
 }
 .gamma_menu ul li {
 	font-size: 12px;
@@ -9,6 +16,9 @@
 }
 .delta_menu {
 	float: right;
+	right: 10px;
+	bottom: 0;
+	position: fixed;
 }
 .delta_menu ul li {
 	font-size: 12px;

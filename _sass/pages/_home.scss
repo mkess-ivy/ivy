@@ -1,16 +1,97 @@
-.isHidden {
-	display: none;
-}
 .alpha_menu {
-	height: calc(100vh - 210px);
-	overflow: scroll;
 	width: 90%;
 	margin: 0 auto;
-	text-align: center;
+
+	@include tablet {
+		width: auto;
+	}
 }
 .primary_slider {
-	display: none;
+	display: none !important;
+
 	@include tablet {
-		display: block;
+		display: block !important;
 	}
+	@include laptop {
+		display: none !important;
+	}
+}
+
+// Dropdown Menu functionality
+.nav {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	height: 95vh;
+
+    @include tablet {
+        margin: 20px 0 50px;
+        text-align: left;
+		height: auto;
+    }
+
+    @include laptop {
+    	height: calc(100vh - 167px);
+    	margin: 0;
+    }
+}
+.nav .button-dropdown {
+	position: relative;
+	transition: 1s;
+}
+.nav li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.nav li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #999;
+    vertical-align: middle;
+    margin-top: -7px;
+}
+.nav li a:hover, .nav li a.dropdown-toggle.active {
+    // background-color: #289dcc ;
+    color: $color3;
+}
+.nav li a:hover span, .nav li a.dropdown-toggle.active span {
+    color: #fff;
+
+}
+.nav li .dropdown-menu {
+    display: none;
+    margin-top: 3px;
+    text-align: center;
+
+    @include tablet {
+    	text-align: left;
+    }
+}
+.nav li .dropdown-menu.active {
+    display: block;
+}
+.dropdown-menu li a {
+	font-size: 16px;
+	width: 100%;
+	padding: 3px 0;
+	line-height: 20px;
+
+	@include tablet {
+		padding: 0;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+// #Dropdown Menu
+
+.small_menu a {
+	font-size: 20px !important;
+	line-height: 26px !important;
 }
