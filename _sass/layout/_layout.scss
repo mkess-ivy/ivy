@@ -27,3 +27,27 @@
         align-items: baseline;
     }
 }
+.fixed_menu {
+    position: fixed;
+    left: 10px;
+    top: 45%;
+    
+    a {
+        font-size: 14px;
+        color: $color2;
+        font-weight: 400;
+        text-transform: uppercase;
+        
+        &:hover {
+            border-bottom: 1px solid;
+        }
+    }
+}
+.collection_wrapper {
+    @extend .inner_wrapper;
+    margin-top: 150px;
+
+    @include desktop {
+        width: 900px;
+    }
+}

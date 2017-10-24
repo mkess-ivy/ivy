@@ -27,13 +27,11 @@ slide7: '/assets/slide7.jpg'
 				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">web<span><img src="/assets/caret.png" width="15" /></span></a>
 					<div class="js-background-receiver" style="background-image: url({{ page.slide2 }});"></div>
 					<ul class="dropdown-menu">
-						<li><a href="">ingram family foundation</a></li>
-						<li><a href="">noisy tenants</a></li>
-						<li><a href="">svncrwns</a></li>
-						<li><a href="">nicole duncan</a></li>
-						<li><a href="">adams + associates</a></li>
-						<li><a href="">taylor's barbershop</a></li>
-						<li><a href="">neptune</a></li>
+						{% for item in site.work %}
+							<li>
+								<a href="{{ item.url }}">{{ item.title }}</a>
+							</li>
+						{% endfor %}
 					</ul>
 				</li>
 				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">visuals<span><img src="/assets/caret.png" width="15" /></span></a>

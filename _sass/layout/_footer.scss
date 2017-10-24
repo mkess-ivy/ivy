@@ -7,9 +7,17 @@
 	left: 10px;
 	bottom: 0;
 	position: fixed;
+
+	@include tablet {
+		left: 20px;
+	}
 }
 .gamma_menu ul li {
 	font-size: 12px;
+	@include tablet {
+		display: inline-block;
+		padding-right: 15px;
+	}
 }
 .gamma_menu ul li a {
 	@extend %menu_links;
@@ -19,9 +27,17 @@
 	right: 10px;
 	bottom: 0;
 	position: fixed;
+
+	@include tablet {
+		right: 20px;
+	}
 }
 .delta_menu ul li {
 	font-size: 12px;
+	@include tablet {
+		display: inline-block;
+		padding-left: 15px;
+	}
 }
 .delta_menu ul li a {
 	@extend %menu_links;
