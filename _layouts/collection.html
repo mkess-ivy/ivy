@@ -15,10 +15,14 @@
         	{% include components/web_cover_img.html %}
         {% endif %}
 
-        <div class="wrapper collection_wrapper">
-        	<div class="content_styles">
+        <div class="wrapper collection_wrapper_visual">
+        	{% if page.type == "web" %}
+            <div class="content_styles">
         		{{ content }}
         	</div>
+            {% else %}
+                {{ content }}
+            {% endif %}
     	</div>
     
         {% include footer.html %}

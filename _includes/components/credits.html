@@ -1,0 +1,8 @@
+<div class="credits_wrapper">
+	<div class="credits_title">credits</div>
+	<ul class="credits_list">
+		{% for credit in site.data.[include.creditList] %}
+		<li>{{ credit.position }}<span class="credits_name"> / {{ credit.name }} {% if credit.name2 %} + {{ credit.name2 }} {% endif %}</span></li>
+		{% endfor %}
+	</ul>
+</div>

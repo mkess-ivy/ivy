@@ -51,3 +51,7 @@
         width: 900px;
     }
 }
+.collection_wrapper_visual {
+    @extend .inner_wrapper;
+    margin-top: 0;
+}

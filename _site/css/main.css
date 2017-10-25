@@ -26,9 +26,7 @@ body {
   font-weight: 300;
   color: #070707;
   background-color: #d5d5d5;
-  -webkit-text-size-adjust: 100%;
-  border-top: 7px solid #070707;
-  border-bottom: 7px solid #070707; }
+  -webkit-text-size-adjust: 100%; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -53,6 +51,8 @@ img {
  */
 a {
   text-decoration: none; }
+  a:hover {
+    border-bottom: 1px solid; }
 
 /**
  * Clearfix
@@ -65,13 +65,10 @@ a {
   .project_meta_wrapper:after, .footer_position:after, .beta_head:after {
     clear: both; }
 
-.group:before,
 .group:after {
+  clear: both;
   content: "";
   display: table; }
-
-.group:after {
-  clear: both; }
 
 .group {
   zoom: 1;
@@ -107,7 +104,7 @@ a {
   content: '';
   display: block;
   width: 50px;
-  margin: 0 auto;
+  margin: 0 auto 75px;
   height: 1px;
   background-color: #070707; }
   @media screen and (min-width: 992px) {
@@ -132,6 +129,45 @@ a {
     .content_styles a:hover {
       border-bottom: 1px solid; }
 
+.visual_wrapper {
+  margin-bottom: 75px;
+  position: relative; }
+
+.visual_no {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: -18px;
+  position: relative;
+  margin-left: 10px; }
+  @media screen and (min-width: 768px) {
+    .visual_no {
+      font-size: 40px;
+      margin-bottom: -25px;
+      margin-left: -20px; } }
+
+.credits_wrapper {
+  margin-bottom: 125px; }
+
+.credits_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-bottom: 10px; }
+  @media screen and (min-width: 768px) {
+    .credits_title {
+      font-size: 24px; } }
+
+.credits_list li {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px; }
+  @media screen and (min-width: 768px) {
+    .credits_list li {
+      font-size: 14px; } }
+
+.credits_name {
+  font-weight: bold; }
+
 .gamma_menu ul li a, .delta_menu ul li a, .beta_menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -142,13 +178,20 @@ a {
   position: relative; }
 
 .gamma_menu {
-  float: left;
-  left: 10px;
+  left: 0px;
+  padding-left: 10px;
   bottom: 0;
-  position: fixed; }
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 7px solid;
+  width: 100%; }
   @media screen and (min-width: 768px) {
     .gamma_menu {
-      left: 20px; } }
+      padding-left: 20px; } }
+
+.gamma_menu ul {
+  margin-bottom: 0px;
+  padding-bottom: 10px; }
 
 .gamma_menu ul li {
   font-size: 12px; }
@@ -158,13 +201,18 @@ a {
       padding-right: 15px; } }
 
 .delta_menu {
-  float: right;
-  right: 10px;
-  bottom: 0;
-  position: fixed; }
+  display: none;
+  padding-right: 10px; }
   @media screen and (min-width: 768px) {
     .delta_menu {
-      right: 20px; } }
+      display: block;
+      bottom: 17px;
+      position: fixed;
+      right: 0px;
+      padding-right: 20px; } }
+
+.delta_menu ul {
+  margin-bottom: 0; }
 
 .delta_menu ul li {
   font-size: 12px; }
@@ -174,9 +222,10 @@ a {
       padding-left: 15px; } }
 
 .logo {
-  float: left;
   position: fixed;
-  left: 10px; }
+  left: 10px;
+  z-index: 501;
+  top: 10px; }
   @media screen and (min-width: 768px) {
     .logo {
       left: 20px; } }
@@ -194,14 +243,17 @@ a {
   padding-top: 10px; }
 
 .beta_menu {
-  float: right;
   position: fixed;
-  right: 10px;
+  right: 0px;
   z-index: 500;
-  background-color: rgba(155, 89, 45, 0.1); }
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+  border-top: 7px solid; }
   @media screen and (min-width: 768px) {
     .beta_menu {
-      right: 20px; } }
+      padding-right: 25px; } }
 
 .beta_menu ul {
   margin: 0; }
@@ -221,14 +273,14 @@ a {
   position: relative; }
 
 @media screen and (min-width: 768px) {
-  .inner_wrapper, .collection_wrapper {
+  .inner_wrapper, .collection_wrapper, .collection_wrapper_visual {
     width: 650px;
     margin: 55px auto 0; } }
 @media screen and (min-width: 992px) {
-  .inner_wrapper, .collection_wrapper {
+  .inner_wrapper, .collection_wrapper, .collection_wrapper_visual {
     width: 800px; } }
 @media screen and (min-width: 1200px) {
-  .inner_wrapper, .collection_wrapper {
+  .inner_wrapper, .collection_wrapper, .collection_wrapper_visual {
     width: 1100px; } }
 
 .flex_menu {
@@ -260,6 +312,9 @@ a {
   @media screen and (min-width: 1200px) {
     .collection_wrapper {
       width: 900px; } }
+
+.collection_wrapper_visual {
+  margin-top: 0; }
 
 .alpha_menu {
   width: 90%;

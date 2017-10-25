@@ -29,8 +29,8 @@ body {
     color: $color2;
     background-color: $color1;
     -webkit-text-size-adjust: 100%;
-    border-top: 7px solid $color2;
-    border-bottom: 7px solid $color2;
+    // border-top: 7px solid $color2;
+    // border-bottom: 7px solid $color2;
 }
 
 
@@ -63,6 +63,9 @@ img {
  */
 a {
   text-decoration: none;
+  &:hover {
+    border-bottom: 1px solid;
+  }
 }
 
 /**
@@ -79,13 +82,15 @@ a {
   }
 }
 
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-} 
+// .group:before,
+// .group:after {
+//   content: "";
+//   display: table;
+// } 
 .group:after {
   clear: both;
+  content: "";
+  display: table;
 }
 .group {
   zoom: 1; /* For IE 6/7 (trigger hasLayout) */

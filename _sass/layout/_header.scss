@@ -1,7 +1,9 @@
 .logo {
-	float: left;
+	// float: left;
 	position: fixed;
 	left: 10px;
+	z-index: 501;
+	top: 10px;
 
 	@include tablet {
 		left: 20px;
@@ -20,14 +22,19 @@
 	padding-top: 10px;
 }
 .beta_menu {
-	float: right;
+	// float: right;
 	position: fixed;
-	right: 10px;
+	right: 0px;
 	z-index: 500;
-	background-color: rgba(155,89,45,0.1);
+	background-color: rgba(255,255,255,0.1);
+	width: 100%;
+	text-align: right;
+	padding-right: 10px;
+	border-top: 7px solid;
 
 	@include tablet {
-		right: 20px;
+		// right: 20px;
+		padding-right: 25px;
 	}
 }
 .beta_menu ul {
