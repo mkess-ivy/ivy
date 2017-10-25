@@ -1,5 +1,10 @@
 $(document).ready(function() {
   
+  // Preloader
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");;
+  });
+
   // Slick Slider + Properties
   $('.primary_slider').slick({
     autoplay: true,
