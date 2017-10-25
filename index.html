@@ -37,13 +37,11 @@ slide7: '/assets/slide7.jpg'
 				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">visuals<span><img src="/assets/caret.png" width="15" /></span></a>
 				<div class="js-background-receiver" style="background-image: url({{ page.slide3 }});"></div>
 					<ul class="dropdown-menu">
-						<li><a href="">the war is over</a></li>
-						<li><a href="">fam @ bma</a></li>
-						<li><a href="">the way wild</a></li>
-						<li><a href="">renegade bride</a></li>
-						<li><a href="">summer love</a></li>
-						<li><a href="">grease</a></li>
-						<li><a href="">portfolio</a></li>
+						{% for project in site.visuals %}
+							<li>
+								<a href="{{ project.url }}">{{ project.title }}</a>
+							</li>
+						{% endfor %}
 					</ul>
 				</li>
 				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">social<span><img src="/assets/caret.png" width="15"/></span></a>

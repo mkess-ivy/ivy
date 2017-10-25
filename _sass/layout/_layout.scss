@@ -1,5 +1,6 @@
 .wrapper {
 	margin: 10px;
+    position: relative;
 }
 .inner_wrapper {
     @include tablet {
@@ -8,7 +9,6 @@
     }
     @include laptop {
         width: 800px;
-        position: relative;
     }
     @include desktop {
         width: 1100px;

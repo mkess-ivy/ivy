@@ -24,10 +24,14 @@
 	position: fixed;
 	right: 10px;
 	z-index: 500;
+	background-color: rgba(155,89,45,0.1);
 
 	@include tablet {
 		right: 20px;
 	}
+}
+.beta_menu ul {
+	margin: 0;
 }
 .beta_menu ul li {
 	font-size: 12px;
