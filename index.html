@@ -14,8 +14,6 @@ slide5: '/assets/slide5.jpg'
 		<div class="slide slide_img"><img src="{{ page.slide3 }}" /></div>
 		<div class="slide slide_img"><img src="{{ page.slide4 }}" /></div>
 		<div class="slide slide_img"><img src="{{ page.slide5 }}" /></div>
-		<div class="slide slide_img"><img src="{{ page.slide6 }}" /></div>
-		<div class="slide slide_img"><img src="{{ page.slide7 }}" /></div>
 	</div>
 
 	<div class="alpha_menu">	
@@ -45,10 +43,7 @@ slide5: '/assets/slide5.jpg'
 				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">social<span><img src="/assets/caret.png" width="15"/></span></a>
 					<div class="js-background-receiver" style="background-image: url({{ page.slide4 }});"></div>
 					<ul class="dropdown-menu">
-						<li><a href="">subscribe</a></li>
-						<li><a href="">instagram</a></li>
-						<li><a href="">vimeo</a></li>
-						<li><a href="">email</a></li>
+						{% include components/short_nav.html data_menu="social_menu" %}
 					</ul>
 				</li>
 				<li class="js-background-trigger"><a href="">profile</a>

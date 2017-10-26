@@ -24,12 +24,9 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 };
 </script>
 <div class="pagination_wrapper">
-  <!-- <div class="wrapper collection_wrapper_visual"> -->
     <div class="frow justify-between">
     {% if prevurl %}<a href="{{prevurl}}" class="prev pagination_links">PREV<br/>PROJECT</a>{% endif %}
 
     {% if nexturl %}<a href="{{nexturl}}" class="nxt pagination_links">NEXT<br/>PROJECT</a>{% endif %}    
     </div>
-  <!-- </div> -->
-
 </div>
