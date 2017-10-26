@@ -56,6 +56,10 @@
     line-height: 60px;
     text-transform: uppercase;
     font-weight: 700;
+
+    &:hover {
+    	border-bottom: 0;
+    }
 }
 .nav li a span {
     display: inline-block;
@@ -140,7 +144,7 @@
   	}
 }
 .js-background-trigger a {
-	display: none;
+	
   	@include laptop {
   		display: block;
   		z-index: 700;
@@ -148,7 +152,7 @@
   	}
 }
 .js-background-trigger {
-	display: none;
+	
 	@include laptop {
 		display: block;
 		position: relative;		

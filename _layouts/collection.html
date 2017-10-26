@@ -8,7 +8,7 @@
             
         {% include header.html %}
 
-        <!-- <div class="fixed_menu"><a href="/">menu</a></div> -->
+        <div class="fixed_menu"><a href="/">menu</a></div>
         {% include components/project_meta.html %}
         
         {% if page.web_cover_img %}
@@ -19,12 +19,14 @@
         	{% if page.type == "web" %}
             <div class="content_styles">
         		{{ content }}
+                {% include components/source_links.html %}
+                {% include components/pagination.html %}
         	</div>
             {% else %}
                 {{ content }}
+                {% include components/pagination.html %}
             {% endif %}
     	</div>
-        {% include components/pagination.html %}
     
         {% include footer.html %}
   </body>
