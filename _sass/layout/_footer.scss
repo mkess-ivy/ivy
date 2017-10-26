@@ -29,7 +29,8 @@
 		padding-right: 15px;
 	}
 }
-.gamma_menu ul li a {
+.gamma_menu ul li a,
+.gamma_menu ul li {
 	@extend %menu_links;
 }
 .delta_menu {
