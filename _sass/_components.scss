@@ -20,7 +20,8 @@
 	@include laptop {
 		float: right;
 		text-align: left;
-		width: 40%;
+		width: 45%;
+		font-size: 20px;
 	}
 }
 .project_meta_wrapper {
@@ -46,7 +47,7 @@
 	margin: 0 auto 150px !important;
 
 	@include laptop {
-		width: 65%;
+		width: auto;
 		margin: 0 0 150px !important;
 	}
 
@@ -68,6 +69,12 @@
 		&:hover {
 			border-bottom: 1px solid;
 		}
+	}
+	p {
+		@include laptop {
+			font-size: 20px;	
+		}
+		
 	}
 }
 

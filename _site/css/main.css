@@ -53,7 +53,8 @@ img {
 a {
   text-decoration: none; }
   a:hover {
-    border-bottom: 1px solid; }
+    border-bottom: 1px solid;
+    padding-bottom: 2px; }
 
 /**
  * Clearfix
@@ -96,7 +97,8 @@ a {
     .project_subtitle {
       float: right;
       text-align: left;
-      width: 40%; } }
+      width: 45%;
+      font-size: 20px; } }
 
 .project_meta_wrapper {
   position: relative; }
@@ -117,7 +119,7 @@ a {
   margin: 0 auto 150px !important; }
   @media screen and (min-width: 992px) {
     .content_styles {
-      width: 65%;
+      width: auto;
       margin: 0 0 150px !important; } }
   .content_styles h2 {
     text-transform: uppercase; }
@@ -132,6 +134,9 @@ a {
         font-size: 20px; } }
     .content_styles a:hover {
       border-bottom: 1px solid; }
+  @media screen and (min-width: 992px) {
+    .content_styles p {
+      font-size: 20px; } }
 
 .visual_wrapper {
   margin-bottom: 75px;
@@ -365,6 +370,16 @@ a {
 .collection_wrapper_visual {
   margin-top: 0; }
 
+.menu_title {
+  font-family: "Lora", serif;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .menu_title {
+      padding-bottom: 0;
+      padding-top: 20px; } }
+
 .alpha_menu {
   width: 90%;
   margin: 0 auto; }
@@ -381,16 +396,6 @@ a {
     .primary_slider {
       display: none !important; } }
 
-.hover_wrapper {
-  display: none !important; }
-  @media screen and (min-width: 992px) {
-    .hover_wrapper {
-      display: block !important;
-      width: 65%;
-      position: absolute;
-      top: 75px;
-      right: -40px; } }
-
 .nav {
   display: block;
   margin: 0;
@@ -404,7 +409,7 @@ a {
       height: auto; } }
   @media screen and (min-width: 992px) {
     .nav {
-      height: calc(100vh - 167px);
+      height: calc(100vh - 105px);
       margin: 0; } }
 
 .nav .button-dropdown {
@@ -439,7 +444,8 @@ a {
   text-align: center; }
   @media screen and (min-width: 768px) {
     .nav li .dropdown-menu {
-      text-align: left; } }
+      text-align: left;
+      margin-left: 15px; } }
 
 .nav li .dropdown-menu.active {
   display: block; }
@@ -455,6 +461,26 @@ a {
       font-size: 18px;
       line-height: 24px; } }
 
+.hover_wrapper {
+  display: none !important; }
+  @media screen and (min-width: 992px) {
+    .hover_wrapper {
+      display: block !important;
+      width: 65vw;
+      height: 60vh;
+      position: fixed;
+      top: 50%;
+      margin-top: calc(-60vh/2);
+      right: -40px; } }
+
+@media screen and (min-width: 992px) {
+  .hover_wrapper_hidden {
+    width: auto;
+    height: 60vh;
+    position: fixed;
+    top: 50%;
+    margin-top: calc(-60vh/2); } }
+
 .fixed_img {
   display: none; }
   @media screen and (min-width: 992px) {
@@ -465,33 +491,30 @@ a {
       background-repeat: no-repeat;
       width: 560px;
       height: 400px;
-      position: fixed;
-      right: 30px;
-      top: 125px; } }
+      z-index: 100;
+      position: relative; } }
   @media screen and (min-width: 1200px) {
     .fixed_img {
       width: 660px;
-      height: 425px;
-      right: 100px; } }
+      height: 425px; } }
 
 .js-background-receiver.hover {
   display: none; }
   @media screen and (min-width: 992px) {
     .js-background-receiver.hover {
-      z-index: 300;
+      z-index: 1000;
       position: fixed;
+      right: 76px;
       display: block;
       height: 400px;
       width: 560px;
-      right: 30px;
-      top: 125px;
       background-color: blue;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat; } }
   @media screen and (min-width: 1200px) {
     .js-background-receiver.hover {
-      right: 100px;
+      right: 132px;
       width: 660px;
       height: 425px; } }
 
