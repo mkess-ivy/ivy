@@ -11,7 +11,17 @@ $(document).ready(function() {
     arrows: false,
     fade: true,
     speed: 500,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    }]
   });
 
   // Catalog Hover Feature

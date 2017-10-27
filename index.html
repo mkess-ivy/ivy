@@ -25,7 +25,7 @@ slide5: '/assets/slide5.jpg'
 				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">web<span><img src="/assets/caret.png" width="15" /></span></a>
 						<div class="hover_wrapper_hidden js-background-receiver" style="background-image: url({{ page.slide2 }});"></div>
 					<ul class="dropdown-menu">
-						{% for item in site.work %}
+						{% for item in site.work limit:7 %}
 							<li>
 								<a href="{{ item.url }}">{{ item.title }}</a>
 							</li>
@@ -35,7 +35,7 @@ slide5: '/assets/slide5.jpg'
 				<li class="button-dropdown js-background-trigger"><a href="javascript:void(0)" class="dropdown-toggle">visuals<span><img src="/assets/caret.png" width="15" /></span></a>
 				<div class="hover_wrapper_hidden js-background-receiver" style="background-image: url({{ page.slide3 }});"></div>
 					<ul class="dropdown-menu">
-						{% for project in site.visuals %}
+						{% for project in site.visuals limit:7 %}
 							<li>
 								<a href="{{ project.url }}">{{ project.title }}</a>
 							</li>

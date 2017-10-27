@@ -193,6 +193,13 @@ a {
 .source_links_wrapper {
   margin-top: 50px; }
 
+.scheduling_wrapper {
+  width: 75%;
+  margin: 100px auto 50px; }
+
+.ds {
+  display: block !important; }
+
 .gamma_menu ul li a,
 .gamma_menu ul li, .delta_menu ul li a, .beta_menu ul li a {
   text-decoration: none;
@@ -409,7 +416,7 @@ a {
       height: auto; } }
   @media screen and (min-width: 992px) {
     .nav {
-      height: calc(100vh - 105px);
+      height: calc(100vh - 75px);
       margin: 0; } }
 
 .nav .button-dropdown {
@@ -425,7 +432,8 @@ a {
   text-transform: uppercase;
   font-weight: 700; }
   .nav li a:hover {
-    border-bottom: 0; }
+    border-bottom: 0;
+    padding-bottom: 0; }
 
 .nav li a span {
   display: inline-block;

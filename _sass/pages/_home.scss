@@ -42,7 +42,7 @@
 		height: auto;
     }
     @include laptop {
-    	height: calc(100vh - 105px);
+    	height: calc(100vh - 75px);
     	margin: 0;
     }
 }
@@ -61,6 +61,7 @@
 
     &:hover {
     	border-bottom: 0;
+    	padding-bottom: 0;
     }
 }
 .nav li a span {
