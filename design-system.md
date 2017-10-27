@@ -1,6 +1,6 @@
 ---
 layout: design-system
-permalink: /design-system
+permalink: /design-system/
 title: Design System
 hello: Design<br/>System
 subtitle: Components used to make this website
