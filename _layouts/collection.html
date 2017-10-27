@@ -9,7 +9,9 @@
         {% include header.html %}
 
         <div class="fixed_menu"><a href="/"><img src="/assets/hamburger.png" width="35" /></a></div>
-        {% include components/project_meta.html %}
+        {% unless page.title == "profile" %}
+            {% include components/project_meta.html %}
+        {% endunless %}
         
         {% if page.web_cover_img %}
         	{% include components/web_cover_img.html %}

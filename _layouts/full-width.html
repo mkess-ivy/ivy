@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+        <div class="se-pre-con"></div>
+            
+        {% include header.html %}
+
+        <div class="fixed_menu"><a href="/"><img src="/assets/hamburger.png" width="35" /></a></div>
+
+        <div class="wrapper collection_wrapper">
+            {{ content }}
+    	</div>
+    
+        {% include footer.html %}
+  </body>
+
+</html>

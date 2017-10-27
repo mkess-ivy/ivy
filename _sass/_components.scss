@@ -152,3 +152,39 @@
 .ds {
 	display: block !important;
 }
+
+// Profile
+.headline {
+	font-size: 40px;
+	padding-top: 5px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+.headline::before{
+	content: '';
+	display: block;
+	width: auto;
+	height: 1px;
+	background: $color2;
+}
+.profile_content {
+	font-size: 20px;
+	line-height: 30px;
+}
+.profile_wrapper {
+	@include tablet {
+		width: 75%;
+	}
+	@include laptop {
+		width: 54%;
+	}
+}
+.profile_menu {
+	margin-top: 50px;
+
+	li a {
+		font-size: 17px;
+		color: $color2;
+		line-height: 28px;
+	}
+}

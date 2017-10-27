@@ -200,6 +200,37 @@ a {
 .ds {
   display: block !important; }
 
+.headline {
+  font-size: 40px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  padding-bottom: 30px; }
+
+.headline::before {
+  content: '';
+  display: block;
+  width: auto;
+  height: 1px;
+  background: #070707; }
+
+.profile_content {
+  font-size: 20px;
+  line-height: 30px; }
+
+@media screen and (min-width: 768px) {
+  .profile_wrapper {
+    width: 75%; } }
+@media screen and (min-width: 992px) {
+  .profile_wrapper {
+    width: 54%; } }
+
+.profile_menu {
+  margin-top: 50px; }
+  .profile_menu li a {
+    font-size: 17px;
+    color: #070707;
+    line-height: 28px; }
+
 .gamma_menu ul li a,
 .gamma_menu ul li, .delta_menu ul li a, .beta_menu ul li a {
   text-decoration: none;
