@@ -7,7 +7,7 @@ subtitle: Components used to make this website
 web_cover_img: /assets/work/web-noisytenants.png
 ---
 {% include components/project_meta.html %}
-
+{% include components/spacer.html height="40" %}
 ## Slider
 <div class="primary_slider"><!-- only on tablet -->
 	<div class="slide slide_img"><img src="{{ page.slide1 }}" /></div>

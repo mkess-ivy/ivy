@@ -188,3 +188,13 @@
 		line-height: 28px;
 	}
 }
+.subscribe_wrapper {
+	@include tablet {
+		max-width: 600px;
+		height: 300px;
+		margin: 0 auto;
+	}
+	@include laptop {
+		max-width: 800px;
+	}
+}

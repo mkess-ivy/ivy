@@ -231,6 +231,15 @@ a {
     color: #070707;
     line-height: 28px; }
 
+@media screen and (min-width: 768px) {
+  .subscribe_wrapper {
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto; } }
+@media screen and (min-width: 992px) {
+  .subscribe_wrapper {
+    max-width: 800px; } }
+
 .gamma_menu ul li a,
 .gamma_menu ul li, .delta_menu ul li a, .beta_menu ul li a {
   text-decoration: none;
