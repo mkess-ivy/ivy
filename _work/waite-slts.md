@@ -3,12 +3,11 @@ layout			: collection
 title 			: Waite SLTS
 hello 			: Waite<br/>SLTS
 type 			: web
-subtitle 		: A community agency that creates opportunity for youth to become entrepreneurs, learn about business and what it takes to produce and execute a project through a full lifecycle.
+subtitle 		: A cyber-security firm based in Washington, D.C. &mdash; specializing in Risk Management
 web_cover_img 	: '/assets/work/web-waite.png'
-source 			: #
-website 		: #
 ---
 
-## How does this work
+## Overview
 
-This website was built using a static site generator, Jekyll, with a component-based style guide.  Features an overlay navigation and slide show that showcases the most recent projects.  Design work completed by Nick Mitchel, co-founder of Noisy Tenants.  Development work completed by me, Montier Kess
+Built on Wordpress. Simple five page website providing information needed for contract portfolio review and application. 
+
