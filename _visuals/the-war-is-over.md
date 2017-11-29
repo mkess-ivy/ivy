@@ -2,7 +2,7 @@
 title: The War is Over
 layout: collection
 type: visual
-name: The War<br/>is Over
+hello: The War<br/>is Over
 subtitle: A community agency that creates opportunity for youth to become entrepreneurs,
   learn about business and what it takes to produce and execute a project through
   a full lifecycle.
