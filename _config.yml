@@ -20,8 +20,8 @@ email: montier.kess@gmail.com
 description: 'Portfolio brand for Montier Kess (@waterme.ivy)
 
 '
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 markdown: kramdown
 theme: minima
 gems:
