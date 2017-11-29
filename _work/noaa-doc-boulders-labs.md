@@ -1,6 +1,5 @@
 ---
 title: NOAA Doc Boulders Labs
-layout: collection
 hello: NOAA Doc<br/>Boulders<br/>Labs
 type: web
 subtitle: A community agency that creates opportunity for youth to become entrepreneurs,
@@ -9,8 +8,9 @@ subtitle: A community agency that creates opportunity for youth to become entrep
 web_cover_img: "/assets/work/web-noaa.png"
 source: 
 website: 
+layout: collection
 ---
 
 ## How does this work
 
-This website was built using a static site generator, Jekyll, with a component-based style guide.  Features an overlay navigation and slide show that showcases the most recent projects.  Design work completed by Nick Mitchel, co-founder of Noisy Tenants.  Development work completed by me, Montier Kess
+This project was an internal information database built using Wordpress.  
