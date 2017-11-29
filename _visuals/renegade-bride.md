@@ -1,4 +1,5 @@
 ---
-layout: collection
 title: Renegade Bride
+layout: collection
 ---
+

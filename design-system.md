@@ -1,11 +1,12 @@
 ---
-layout: design-system
-permalink: /design-system/
 title: Design System
+permalink: "/design-system/"
+layout: design-system
 hello: Design<br/>System
 subtitle: Components used to make this website
-web_cover_img: /assets/work/web-noisytenants.png
+web_cover_img: "/assets/work/web-noisytenants.png"
 ---
+
 {% include components/project_meta.html %}
 {% include components/spacer.html height="40" %}
 ## Slider

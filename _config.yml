@@ -1,25 +1,31 @@
-# Site settings
+---
 title: The Ivy Project
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  visuals:
+    title: Visuals
+    output: true
+    permalink: "/visuals/:title/"
+  work:
+    title: Work
+    output: true
+    permalink: "/work/:title/"
 email: montier.kess@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Portfolio brand for Montier Kess (@waterme.ivy)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: 'Portfolio brand for Montier Kess (@waterme.ivy)
 
-# Build settings
+'
+baseurl: ''
+url: ''
 markdown: kramdown
 theme: minima
 gems:
-  - jekyll-feed
+- jekyll-feed
 exclude:
-  - Gemfile
-  - Gemfile.lock
-
-collections:
-  work:
-    output: true
-    permalink: /work/:title/
-
-  visuals:
-    output: true
-    permalink: /visuals/:title/
+- Gemfile
+- Gemfile.lock

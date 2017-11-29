@@ -1,12 +1,14 @@
 ---
-layout			: collection
-title 			: Nicole Duncan
-hello 			: Nicole<br/>Duncan
-type 			: web
-subtitle 		: A community agency that creates opportunity for youth to become entrepreneurs, learn about business and what it takes to produce and execute a project through a full lifecycle.
-web_cover_img 	: '/assets/work/web-nicoleduncan.png'
-source 			: #
-website 		: #
+title: Nicole Duncan
+layout: collection
+hello: Nicole<br/>Duncan
+type: web
+subtitle: A community agency that creates opportunity for youth to become entrepreneurs,
+  learn about business and what it takes to produce and execute a project through
+  a full lifecycle.
+web_cover_img: "/assets/work/web-nicoleduncan.png"
+source: 
+website: 
 ---
 
 ## How does this work

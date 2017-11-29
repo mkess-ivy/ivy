@@ -1,4 +1,5 @@
 ---
-layout: collection
 title: Summer Love
+layout: collection
 ---
+
